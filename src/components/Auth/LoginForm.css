@@ -1,0 +1,55 @@
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(1, 9, 15, 0.85); 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    width: 100%; 
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #3a506b;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent */
+    color: #d9e6f6; /* Light text color */
+    border-radius: 4px;
+}
+
+.login-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1ca0d2; /* A blue that fits well with your background */
+    color: white;
+    cursor: pointer;
+}
+
+/* Interactive states */
+.login-form button:hover,
+.login-form button:focus {
+    background-color: #1380a1; /* A slightly darker blue for hover state */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .login-form {
+        margin-top: auto; /* Pushes the form to the bottom on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        margin: 0 auto; /* Centers the form horizontally on very small screens */
+        padding: 15px;
+        border-radius: 0; /* Optional: Makes it look more 'app-like' on mobile */
+    }
+}
+
+.error {
+    color: red;
+    /* Additional styling as needed */
+}

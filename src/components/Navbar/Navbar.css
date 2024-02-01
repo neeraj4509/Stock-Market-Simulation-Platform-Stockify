@@ -1,0 +1,81 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 69, 105);
+    padding: 10px 20px; 
+    box-sizing: border-box;
+    width: 100%;
+    height: 110px; 
+    
+  }
+ 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    
+   
+  }
+  
+ 
+  li {
+    padding: 10px 20px;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+  
+  .active {
+    color: #4CAF50; 
+    border-bottom: 2px solid #4CAF50; 
+  }
+
+  .logout-button {
+   font-weight: bold;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8); /* Red color for logout to indicate action */
+    color: rgb(239, 10, 10);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #9e9393; /* Darker red on hover */
+  }
+
+
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column; 
+    }
+  
+    li {
+      text-align: center; 
+    }
+  }
+  

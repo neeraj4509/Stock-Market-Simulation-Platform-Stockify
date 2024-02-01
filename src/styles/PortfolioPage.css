@@ -1,0 +1,72 @@
+
+.portfolio-container {
+  background: url('../assets/portfolio.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh; /* Ensures at least full viewport height coverage */
+  padding: 20px;
+  color: #f7f7f7;
+  font-weight: bold;
+  }
+  
+  .portfolio-container h2 {
+    color: #333; 
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Soft shadow for depth */
+    background: rgba(39, 58, 97, 0.6);
+  }
+
+  .pl-positive {
+    color: #05ff44; 
+  }
+  
+  .pl-negative {
+    color: #ff8178; 
+  }
+  
+  .total-gain-positive {
+    font-weight: bold;
+    text-align: center;
+    color: #026502; 
+  }
+  
+  .total-gain-negative {
+    font-weight: bold;
+    text-align: center;
+    color: #f44336; 
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color:  rgba(30, 39, 48, 0.7);
+ }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+  }
+
+  button {
+    background-color: #130e0c; /* Vibrant color for action buttons */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for 'Sell' button */
+  button:hover {
+    background-color: #ff0000; /* A shade darker on hover */
+  }

@@ -1,0 +1,103 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.main-container {
+  background-image: url('../assets/home-image.png'); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  padding-top: 50px; /* Adjust the padding to push content down */
+}
+
+.welcome-container {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto 30px; /* Center horizontally and add space below */
+  width: max-content; 
+  backdrop-filter: blur(5px); /* Blur effect for the background */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* White border for emphasis */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-container h1 {
+  font-size: 2.2rem; /* Increased font size */
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase; /* Makes the text uppercase */
+  letter-spacing: 2px; /* Adds spacing between letters for a premium look */
+}
+
+.indices-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Spacing between sections */
+}
+
+.index-card {
+  background: rgba(0, 0, 0, 0.8); 
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.index-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.index-name {
+  font-size: 1.2rem; /* Larger font size for index name */
+  margin-bottom: 10px; /* Space between name and value */
+}
+
+.index-value {
+  font-size: 1.8rem; /* Larger font size for index value */
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing below the search section */
+}
+
+.search-container input[type="text"] {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Inner shadow for depth */
+}
+
+.search-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #21BA45; /* Attractive green */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.search-container button:hover {
+  background-color: #16AB39; /* Darker shade of green for hover state */
+}
